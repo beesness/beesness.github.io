@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Beesness ~ serious games</title>
+
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,700,900" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet">
+
+		<!-- LOAD JS LIBRARIES -->
+		<script src="js/lib/jquery.min.js"></script>
+		<!-- <script src="js/lib/greensock/TweenMax.min.js"></script> -->
+
+		<!-- LOAD SCROLL MAGIC -->
+		<!-- <script src="scrollmagic/uncompressed/ScrollMagic.js"></script> -->
+		<script src="scrollmagic/minified/ScrollMagic.min.js"></script>
+
+		<!-- LOAD PLUGINS FOR SCROLL MAGIC -->
+		<!-- <script src="scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script> -->
+
+	</head>
+
+	<body>
+
+		<section id="one" class="full flex-h-centred flex-v-bottom">
+			<h1 class="animated buzz infinite">Beesness</h1>
+		</section>
+
+		<section class="content">
+			<h3>A playable simulation of a <b>capitalist market economy</b></h3>
+			<p>As a player, you control a <b>colony of bees</b>. </p>
+			<p>These are special bees. They have learned how to do <em>beesness</em> from us humans.</p>
+			<p>Every colony operates operate in the <b>garden of Commons</b>.</p>
+			<p>Throughout the game, you can experiment with different <b>beesness plans</b>: from <em>trading</em> flowers for honey, to <em>extorting</em> honey from other colonies, <em>privatising</em> flowers and other nasty moves...</p>
+			<h3>Your goal</h3>
+			<p>To have the most <strong>honey</strong> at the end of the year!</p>
+		</section>
+
+		<div id="triggerDrone1" class="trigger"></div>
+		<section id="two" class="full flex-h-centred flex-v-centred">
+			<div id="drone1" class="drone">
+				<img src="images/drone.png" alt="Describe this image!">
+			</div>
+		</section>
+
+		<section id="three" class="full">
+		</section>
+
+		<section class="content">
+			<h2>End play scenarios</h2>
+			<ol>
+				<li>At the end of the year (12 rounds), the colony with the <strong>most honey wins</strong>, provided there are still some flowers left in the <em>garden</em>.</li>
+				<li>If all flowers are picked from the garden, at any point during the game, <strong>everybody loses</strong>.</li>
+			</ol>
+		</section>
+
+		<section id="four" class="full">
+		</section>
+
+		<section id="five" class="full flex-h-centred flex-v-centred">
+			<div id="mc_embed_signup" class="content">
+				<h2>Sign up for updates</h2>
+				<form action="//twitter.us12.list-manage.com/subscribe/post?u=43efbdeecd252c30b1ead06d0&amp;id=ab4c4ec792" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<div id="mc_embed_signup_scroll">
+						<div class="mc-field-group">
+							<label for="mce-EMAIL">Your email</label>
+							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="you@email.com">
+						</div>
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>
+						<div style="position: absolute; left: -5000px;" aria-hidden="true">
+						<input type="text" name="b_43efbdeecd252c30b1ead06d0_ab4c4ec792" tabindex="-1" value="">
+					</div>
+					<div class="clear">
+						<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+					</div>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<script>
+
+			$(function ()
+			{
+				// start a new ScrollMagic controller
+				var controller = new ScrollMagic.Controller()
+
+				// let's set the scene
+				var sceneOptions = {}
+
+				// let's define the element that will trigger the animation, using a CSS-like selector
+				sceneOptions.triggerElement = '#triggerDrone1'
+
+				// duration defines how "long" the animation is
+				// sceneOptions.duration = 0 // 0 will keep the element pinned indefinitely
+				// sceneOptions.duration = 782 // will keep the element pinned for X pixels
+				sceneOptions.duration = '100%' // will keep the element pinned for X% of the browser's height
+
+				// triggerHook defines where on the page the animation is triggered
+				sceneOptions.triggerHook = 0 // from 0 (top) to 1 (bottom), default to center (0.5)
+
+				// ..and then creat the scene
+				var scene = new ScrollMagic.Scene(sceneOptions)
+				// scene.addIndicators({name: 'drone1'}) // add indicators
+				scene.addTo(controller)
+
+				// let's pin the drone (make it stick whilst the rest of the page scroll)
+				var pinOptions = {}
+				pinOptions.pushFollowers = false
+				// ..and activate the pin
+				scene.setPin('#drone1', pinOptions)
+			})
+
+		</script>
+
+	</body>
+</html>
