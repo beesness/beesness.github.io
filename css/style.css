@@ -1,18 +1,25 @@
 /* A BIT OF TYPOGRAPHY */
 
-	body 
+	body
 	{
-		font-family: 'Source Code Pro', Helvetica, Arial, sans-serif;
+		font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 		font-weight: 300;
 		font-size: 1em;
 		line-height: 1.5;
-		color: #333333;
+		/*color: #333333;*/
+		color: #424242;
+		letter-spacing: .04em;
+
+		-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 	}
 
-	h1, h2, h3 
+	h1, h2, h3
 	{
-		font-weight: 700;
+		font-family: 'Roboto Mono', monospace, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+		font-weight: 300;
 		color: black;
+		/*color: #2d0466;*/
 	}
 
 	b
@@ -20,14 +27,19 @@
 		font-weight: 700;
 	}
 
-	p 
+	h1 b, h2 b, h3 b
+	{
+		font-weight: 500;
+	}
+
+	p
 	{
 		margin: 2em 0 2em 0;
 	}
 
 /* CENTRED CONTENT */
 
-	.content 
+	.content
 	{
 		margin: 2em auto;
 		max-width: 40em;
@@ -39,7 +51,7 @@
 	.flex-h-centred
 	{
 		display: flex;
-		justify-content: center; 
+		justify-content: center;
 	}
 
 	.flex-v-centred
@@ -56,12 +68,12 @@
 
 /* FULL-SIZE IMAGES */
 
-	html, body 
+	html, body
 	{
 		height: 100%;
 	}
 
-	.full 
+	.full
 	{
 		height: 100%;
 		background-color: yellow;
@@ -70,52 +82,52 @@
 		/*position: relative;*/
 	}
 
-	#one 
+	#one
 	{
 		background-image: url(../images/cards-promo.jpg);
 	}
 
-	#two 
+	#two
 	{
 		background-image: url(../images/arm.jpg);
 	}
 
-	#three 
+	#three
 	{
 		background-image: url(../images/hands.jpg);
 	}
 
-	#four 
+	#four
 	{
 		background-image: url(../images/grab.jpg);
 	}
 
-	#five 
+	#five
 	{
 		background-image: url(../images/suspense.jpg);
 	}
 
 /* MAILCHIMP FORM */
 
-	#mc_embed_signup 
-	{	
+	#mc_embed_signup
+	{
 		width: 30em;
 		height: 13em;
 		background: yellow;
 	}
 
-	input 
+	input
 	{
 		box-sizing: border-box;
 		width: 100%;
 	}
 
-	input[type="email"] 
+	input[type='email']
 	{
 		padding: .5em;
 	}
 
-	input[type="submit"]
+	input[type='submit']
 	{
 		margin: 1em 0;
 		background-color: black;
@@ -128,13 +140,13 @@
 
 /* BEES */
 
-	.drone 
+	.drone
 	{
 		width: 320px;
 		height: 320px;
 	}
 
-	.drone img 
+	.drone img
 	{
 		width: 100%;
 	}
@@ -147,7 +159,7 @@
 
 /* SPACERS */
 
-	.spacer 
+	.spacer
 	{
 		display: block;
 	}
