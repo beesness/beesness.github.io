@@ -22,50 +22,64 @@
   {
     position: relative;
     // filter: brightness(1.05) contrast(1.1);
-    filter: brightness(.83) contrast(1.53);
+    // filter: brightness(.83) contrast(1.53);
+
+    /*img
+    {
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
+    }*/
 
     &:after
     {
       content: " ";
-      mix-blend-mode: screen;
+      // mix-blend-mode: screen;
+      mix-blend-mode: hard-light;
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      background: #ffde00;
+      background: $orange;
+      pointer-events: none;
+      z-index: 3;
+      // opacity: 0.66666;
     }
   }
 
-	/*#one
+  #one
 	{
 		background-image: url(../images/cards-promo.jpg);
 	}
 
-  #five
-	{
-		background-image: url(../images/suspense.jpg);
-	}
-
-  */
-
 	#two
 	{
-		background-image: url(../images/suspense.jpg);
+		background-image: url(../images/suspense+.jpg);
 	}
 
 	#three
 	{
-		background-image: url(../images/hands.jpg);
+		background-image: url(../images/counting.jpg);
 	}
 
 	#four
 	{
 		background-image: url(../images/grab.jpg);
+    &:after
+    {
+      background: $clouds;
+      mix-blend-mode: color;
+    }
 	}
+
+  #five
+  {
+    background-image: url(../images/hands.jpg);
+  }
 
 #what-if
 {
+  // background-image: url(../images/light_honeycomb.png);
   img
   {
     max-width: 320px;
