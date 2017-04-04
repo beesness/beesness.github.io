@@ -66,5 +66,9 @@
     position: absolute;
     top: $row;
     max-width: 160px;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
   }
 }

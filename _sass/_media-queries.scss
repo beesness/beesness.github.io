@@ -25,6 +25,11 @@ body
 		font-size: 12px; // p → 18px
 	}
 
+	h1
+	{
+		font-size: 2.4375rem;
+	}
+
 	.content
 	{
 		padding: $row;
@@ -36,10 +41,10 @@ body
 	}
 }
 
-@media (max-width: 399px)
+/*@media (max-width: 399px)
 {
 	html
 	{
 		font-size: 9px; // p → 13.5px
 	}
-}
+}*/
