@@ -1,0 +1,45 @@
+body
+{
+	// max-width: 960px;
+	// margin: 0 auto;
+	// padding: 0 $row/2;
+
+	p
+	{
+		margin-bottom: $row;
+	}
+}
+
+@media (max-width: 959px)
+{
+	html
+	{
+		font-size: 13.3333333333333px; // p → 20px
+	}
+}
+
+@media (max-width: 599px)
+{
+	html
+	{
+		font-size: 12px; // p → 18px
+	}
+
+	.content
+	{
+		padding: $row;
+	}
+
+	.full
+	{
+		background-attachment: scroll;
+	}
+}
+
+@media (max-width: 399px)
+{
+	html
+	{
+		font-size: 9px; // p → 13.5px
+	}
+}

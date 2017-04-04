@@ -1,0 +1,86 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+* {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	outline: medium none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+table {
+	width: 100%;
+
+	td
+	{
+		padding-right: 1rem;
+
+		&:last-child
+		{
+			padding-right: 0;
+		}
+	}
+}
+
+/* FLEXBOX! */
+
+	.flex-h-centred
+	{
+		display: flex;
+		justify-content: center;
+	}
+
+	.flex-v-centred
+	{
+		display: flex;
+		align-items: center;
+	}
+
+	.flex-v-bottom
+	{
+		display: flex;
+		align-items: flex-end;
+	}
+
+/* INPUTs */
+
+input
+{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 1em;
+	height: 4.5rem;
+	border: none;
+}
+
+/* BUTTONS */
+
+a
+{
+	padding: 1px 6px 3px;
+	// border-radius: 3px;
+	text-decoration: none;
+}

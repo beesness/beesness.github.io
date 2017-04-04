@@ -1,0 +1,56 @@
+@import 'gridlover';
+
+/* FONTS */
+
+$body-font: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$mono-font: 'Roboto Mono', monospace, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+body
+{
+	font-family: $body-font;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6,
+{
+	font-family: $mono-font;
+	font-weight: 300;
+	font-style: inherit;
+	letter-spacing: .04em;
+}
+
+input, a
+{
+	font-family: $mono-font;
+	font-weight: 500;
+}
+
+// a,
+b
+{
+	font-weight: 700;
+}
+
+i, em,
+blockquote
+{
+	font-style: italic;
+	font-weight: 400;
+}
+
+h4
+{
+	margin-bottom: $row *1;
+}
+
+/* section
+{
+	margin-bottom: $row * 3;
+	clear: both;
+	display: block;
+} */
+
+.centred
+{
+	text-align: center;
+}

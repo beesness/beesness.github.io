@@ -1,0 +1,70 @@
+/* FULL-SIZE IMAGES */
+
+	html, body
+	{
+		height: 100%;
+	}
+
+	.full
+	{
+		height: 100%;
+		background-size: cover;
+    background-position: center;
+		background-attachment: fixed;
+	}
+
+  .image
+  {
+    position: relative;
+    // filter: brightness(1.05) contrast(1.1);
+    filter: brightness(.83) contrast(1.53);
+
+    &:after
+    {
+      content: " ";
+      mix-blend-mode: screen;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #ffde00;
+    }
+  }
+
+	/*#one
+	{
+		background-image: url(../images/cards-promo.jpg);
+	}
+
+  #five
+	{
+		background-image: url(../images/suspense.jpg);
+	}
+
+  */
+
+	#two
+	{
+		background-image: url(../images/suspense.jpg);
+	}
+
+	#three
+	{
+		background-image: url(../images/hands.jpg);
+	}
+
+	#four
+	{
+		background-image: url(../images/grab.jpg);
+	}
+
+#what-if
+{
+  img
+  {
+    position: absolute;
+    top: $row;
+    max-width: 160px;
+  }
+}

@@ -1,0 +1,68 @@
+body,
+button,
+input,
+select,
+textarea,
+p
+{
+	color: $clouds;
+}
+
+h1, h2, h3,
+i, b
+{
+	color:$charcoal;
+}
+
+a
+{
+	transition: .3s;
+	background: $charcoal;
+	color: $yellow;
+	color: $orange;
+
+	&:hover,
+	&:focus
+	{
+		transition: .3s;
+		color: $charcoal;
+		background: $yellow;
+	}
+}
+
+input[type='submit']
+{
+	transition: .3s;
+	background: $charcoal;
+	color: $yellow;
+	color: $orange;
+
+	&:hover,
+	&:focus
+	{
+		transition: .3s;
+		color: $charcoal;
+		background: $yellow;
+	}
+}
+
+body
+{
+	background: $pale-sky;
+}
+
+#what-if
+{
+	background: $orange;
+	.content
+	{
+		background: $charcoal;
+		color: $yellow;
+		color: $orange;
+	}
+}
+
+#mailchimp
+{
+	background: $orange;
+}
