@@ -13,6 +13,11 @@
 		background-attachment: fixed;
 	}
 
+  .half
+  {
+    height: 50%;
+  }
+
   .image
   {
     position: relative;
@@ -63,12 +68,6 @@
 {
   img
   {
-    position: absolute;
-    top: $row;
-    max-width: 160px;
-    display: block;
-    margin: auto;
-    left: 0;
-    right: 0;
+    max-width: 320px;
   }
 }
