@@ -12,7 +12,7 @@
 	  height: $row * 4;
 	  border-bottom-left-radius: 53%;
 	  position: absolute;
-	  right: 0;
+	  right: $row * 2;
 	  top: -$row * 4;
 	  transition: .2s ease-out;
 		opacity: 0;
