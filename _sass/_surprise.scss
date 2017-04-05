@@ -1,33 +1,29 @@
-h1
+#me
 {
 	position: relative;
 
-	&:after 
+	&:after
 	{
-	  background: url("../assets/surprise.png") no-repeat;
+	  background: url("../images/surprise.png") no-repeat;
 	  background-size: contain;
 
 	  content: " ";
 	  width: $row * 4;
 	  height: $row * 4;
 	  border-bottom-left-radius: 53%;
-	  // display: block;
 	  position: absolute;
 	  right: 0;
-	  top: -$row * 5;
+	  top: -$row * 4;
 	  transition: .2s ease-out;
+		opacity: 0;
 	}
 
 	&:hover
 	{
 		&:after
 		{
-			top: -$row * 1;
+			top: 0;
+			opacity: 1;
 		}
 	}
 }
-
-// #surprise:target
-// {
-// 	left: 0;
-// }
