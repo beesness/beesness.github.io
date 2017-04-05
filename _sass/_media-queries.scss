@@ -7,6 +7,11 @@ body
 	p
 	{
 		margin-bottom: $row;
+
+		&:last-child
+		{
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -36,6 +41,13 @@ body
 	h1
 	{
 		font-size: 2.4375rem;
+		// letter-spacing: -0.04em;
+	}
+
+	h2
+	{
+		font-size: 1.75rem;
+		font-weight: 500;
 	}
 
 	/*#what-if
