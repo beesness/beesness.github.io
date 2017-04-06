@@ -67,15 +67,35 @@ table {
 
 /* INPUTs */
 
-input
+.form
 {
-	box-sizing: border-box;
-	width: 100%;
-	padding: 0 1em;
-	height: 4.5rem;
-	border: none;
-}
+	input
+	{
+		box-sizing: border-box;
+		width: 100%;
+		padding: 0 1em;
+		height: 4.5rem;
+		border: none;
+	}
 
+	input.name
+	{
+		// border-bottom: 1px solid $orange;
+		position: relative;
+		// top: -1px;
+	}
+
+	label
+	{
+		position: absolute;
+		left: -5000px;
+	}
+
+	.disclaimer
+	{
+		margin-top: 2.25rem;
+	}
+}
 /* BUTTONS */
 
 a

@@ -30,19 +30,36 @@ a
 	}
 }
 
-input[type='submit']
+.form
 {
-	transition: .3s;
-	background: $charcoal;
-	color: $yellow;
-	color: $orange;
+	background: $orange;
 
-	&:hover,
-	&:focus
+	input
 	{
 		transition: .3s;
-		color: $charcoal;
-		background: $yellow;
+		// border: 1px solid $orange;
+	}
+
+	input:focus,
+	input:active
+	{
+		transition: .3s;
+		box-shadow: inset 0 0 0px 1px $charcoal;
+	}
+
+	input[type='submit']
+	{
+		background: $charcoal;
+		color: $yellow;
+		color: $orange;
+
+		&:hover,
+		&:focus
+		{
+			transition: .3s;
+			color: $charcoal;
+			background: $yellow;
+		}
 	}
 }
 
@@ -54,15 +71,11 @@ body
 #what-if
 {
 	background: $orange;
+
 	.content
 	{
 		background: $charcoal;
 		color: $yellow;
 		color: $orange;
 	}
-}
-
-#mailchimp
-{
-	background: $orange;
 }
