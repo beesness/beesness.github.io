@@ -36,11 +36,8 @@ Will you manage to maximise your honey profits while avoiding *drone strikes* an
 
 Yas! 
 
-You can [download Beesness **for free**](http://eepurl.com/cJ0Es9)!
+Please get in touch [matteo@beesness.games](mailto:matteo@beesness.games) and I'll send you a free print&play! 
 
-Print it yourself at home, at school or at work. 
-
-After you play it, please get in touch and let me know how you found it [matteo@beesness.games](mailto:matteo@beesness.games). One of your ideas may end up in the final game :)
+After you play it, I may ask you a few questions. Imagine, one of your ideas may end up in the final game :)
 
 I've been co-creating Beesness with primary and secondary school pupils. Many of the game features have been suggested, or even designed, by them!
-
