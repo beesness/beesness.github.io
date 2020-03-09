@@ -1,0 +1,95 @@
+.container
+{
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 $row/2;
+
+	p, figure
+	{
+		// margin-bottom: $row;
+	}
+}
+
+html
+{
+	font-size: 16px; // p → 22px
+}
+
+@media (max-width: 799px)
+{
+	html
+	{
+		font-size: 14px; // p → 19.25px
+	}
+
+	h1, h2, h3, h4, p, ul, ol
+	{
+		margin-top: $row*.6;
+		margin-bottom: $row*.6;
+	}
+
+	.boxed
+	{
+	  margin: $row*.6 0;
+	  padding: $row*.6 0;
+	}
+}
+
+@media (max-width: 599px)
+{
+
+	h1 {
+		// font-size: 3.9375rem;
+		font-size: 55px;
+		// line-height: $row * 2;
+
+		&:after
+		{
+			width: $row * 3;
+			height: $row * 3;
+			top: -$row * 4;
+		}
+	}
+
+	h2 {
+		// font-size: 2.4375rem;
+		font-size: 40px;
+		// line-height: $row * 2;
+	}
+
+	h3 {
+		// font-size: 30px;
+
+		// similar to h4
+		// font-size: 1.5rem;
+		// line-height: $row/2;
+		// margin: $row/2 0;
+
+		// just like h4
+		font-size: 1.5rem;
+		// line-height: $row;
+	}
+
+	.image-frame.fixed
+	{
+		background-attachment: scroll;
+		background-size: cover !important;
+
+		// full-bleed
+		margin-left: -1.225rem;
+		margin-right: -1.225rem;
+	}
+}
+
+@media (max-width: 399px)
+{
+	html
+	{
+		font-size: 13px; // p → 17.875px
+	}
+
+	.hidden-xs
+	{
+		display: none;
+	}
+}

@@ -1,0 +1,50 @@
+.image-frame
+{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &.fixed
+  {
+    background-attachment: fixed;
+    background-size: contain;
+  }
+}
+
+.blend
+{
+  position: relative;
+  // filter: brightness(1.05) contrast(1.1);
+  // filter: brightness(.83) contrast(1.53);
+
+  /*img
+  {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }*/
+
+  &:after
+  {
+    content: " ";
+    // mix-blend-mode: screen;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 3;
+    // opacity: 0.66666;
+  }
+
+  &.yellow:after
+	{
+		background: $yellow;
+		mix-blend-mode: hard-light;
+	}
+
+	&.blue:after
+	{
+		background: $clouds;
+		mix-blend-mode: color;
+	}
+}

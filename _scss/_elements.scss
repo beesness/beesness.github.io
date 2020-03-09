@@ -1,0 +1,87 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+* {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	outline: medium none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+table
+{
+	width: 100%;
+
+	tr
+	{
+		&:first-child
+		{
+			td
+			{
+				padding-top: 0;
+			}
+		}
+
+		&:last-child
+		{
+			border-bottom: none;
+
+			td
+			{
+				padding-bottom: 0;
+			}
+		}
+	}
+
+	td
+	{
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-right: 1rem;
+		vertical-align:top;
+
+		&:last-child
+		{
+			padding-right: 0;
+		}
+	}
+}
+
+.margin-top-none
+{
+	margin-top: 0 !important;
+}
+
+.margin-bottom-none
+{
+	margin-bottom: 0 !important;
+}
+
+.boxed
+{
+  margin: $row 0;
+  padding: $row 0;
+}

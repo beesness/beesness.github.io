@@ -14,7 +14,10 @@ module.exports = function(grunt) {
 					style: 'compressed'
 				},
 				files: {
-					'css/sassy.css': '_sass/sassy.scss'
+					'css/sassy.css': '_sass/sassy.scss',
+					'css/base.css': '_scss/base.scss',
+					'css/home.css': '_scss/home.scss',
+					'css/classes.css': '_scss/classes.scss'
 				}
 			}
 		},
@@ -29,7 +32,8 @@ module.exports = function(grunt) {
 			},
 			css: {
 				files: [
-					'_sass/**'
+					'_sass/**',
+					'_scss/**'
 				],
 				tasks: ['sass'],
 				options: {
@@ -55,7 +59,7 @@ module.exports = function(grunt) {
 					},
 					browser: 'google chrome',
 					notify: false
-				}	
+				}
 			}
 		}
 	})
@@ -64,6 +68,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-connect')
 	grunt.loadNpmTasks('grunt-contrib-watch')
 	grunt.loadNpmTasks('grunt-browser-sync');
-	
+
 	grunt.registerTask('default', ['browserSync', 'watch'])
 }
