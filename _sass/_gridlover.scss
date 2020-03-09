@@ -25,23 +25,26 @@ body {
 h1 {
 	font-size: 3.9375rem;
 	line-height: 4.5rem;
-	margin-top: 2.25rem;
-	margin-top: 0;
-	margin-bottom: 2.25rem;
 }
 
 h2 {
 	font-size: 2.4375rem;
 	line-height: 4.5rem;
-	margin-top: 0rem;
-	margin-bottom: 2.25rem;
+	// margin-top: 0rem;
+	// margin-bottom: 2.25rem;
 }
 
 h3 {
 	font-size: 1.5rem;
 	line-height: 2.25rem;
-	margin-top: 2.25rem;
-	margin-bottom: 0rem;
+	// margin-top: 2.25rem;
+	// margin-bottom: 0rem;
+}
+
+h1, h2, h3
+{
+	margin-top: 0;
+	margin-bottom: 2.25rem;
 }
 
 p, ul, ol, pre, table, blockquote {

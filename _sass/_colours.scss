@@ -19,7 +19,6 @@ a
 	transition: .3s;
 	background: $charcoal;
 	color: $yellow;
-	color: $orange;
 
 	&:hover,
 	&:focus
@@ -32,12 +31,12 @@ a
 
 .form
 {
-	background: $orange;
+	background: $yellow;
 
 	input
 	{
 		transition: .3s;
-		// border: 1px solid $orange;
+		// border: 1px solid $yellow;
 	}
 
 	input:focus,
@@ -51,7 +50,6 @@ a
 	{
 		background: $charcoal;
 		color: $yellow;
-		color: $orange;
 
 		&:hover,
 		&:focus
@@ -68,14 +66,25 @@ body
 	background: $pale-sky;
 }
 
-#what-if
+.yellow-bg
 {
-	background: $orange;
+	background: $yellow;
+}
 
-	.content
+.charcoal-bg
+{
+	background: $charcoal;
+	color: $yellow;
+
+	h1, h2, h3,
+	i, b,
+	body,
+	button,
+	input,
+	select,
+	textarea,
+	p
 	{
-		background: $charcoal;
 		color: $yellow;
-		color: $orange;
 	}
 }
