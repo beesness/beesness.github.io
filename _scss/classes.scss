@@ -1,5 +1,10 @@
 @import 'variables';
 
+body
+{
+  background: $pink;
+}
+
 #logo
 {
   max-width: 160px;
@@ -65,7 +70,7 @@
   	box-shadow: inset 0 -1px 0 $charcoal;
     transition: color, background-color .3s;
 
-    padding: $row/2;
+    padding: $row/2 1rem;
     min-width: 33%;
 
     h2, h3, h4 {

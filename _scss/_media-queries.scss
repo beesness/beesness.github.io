@@ -33,6 +33,12 @@ html
 	  margin: $row*.6 0;
 	  padding: $row*.6 0;
 	}
+
+	.image-frame
+	{
+		margin-left: -$row/2;
+		margin-right: -$row/2;
+	}
 }
 
 @media (max-width: 599px)
